@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07DA2F5A-4BCE-444E-A48C-E6C2C7DB44B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolarMonitor</RootNamespace>
+    <AssemblyName>iSmartOffGrid</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>offgrid.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Win, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceObj.cs" />
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\devRt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\devRt.Designer.cs">
+      <DependentUpon>devRt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Sform\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Sform\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Sform\AutoSearchAddr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Sform\AutoSearchAddr.Designer.cs">
+      <DependentUpon>AutoSearchAddr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SolarSchedule\ScheduleManager.cs" />
+    <Compile Include="SolarSchedule\ScheduleOffGrid.cs" />
+    <Compile Include="SolarSchedule\ScheduleTask.cs" />
+    <Compile Include="TabPage\AddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPage\AddTask.Designer.cs">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\RealTimeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\RealTimeLine.Designer.cs">
+      <DependentUpon>RealTimeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\HistoricLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\HistoricLine.Designer.cs">
+      <DependentUpon>HistoricLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\HistoricTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\HistoricTable.Designer.cs">
+      <DependentUpon>HistoricTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\AlertEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\AlertEvent.Designer.cs">
+      <DependentUpon>AlertEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\FormScheduleTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPage\FormScheduleTask.Designer.cs">
+      <DependentUpon>FormScheduleTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\TableDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\TableDisplay.Designer.cs">
+      <DependentUpon>TableDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\IDeviceUI.cs" />
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar.Designer.cs">
+      <DependentUpon>EASolar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolarStatePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolarStatePage.designer.cs">
+      <DependentUpon>EASolarStatePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar_RateInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar_RateInfo.designer.cs">
+      <DependentUpon>EASolar_RateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\SolarStartControlPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\SolarStartControlPage.Designer.cs">
+      <DependentUpon>SolarStartControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\SystemControlPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\EASolar_GF8000\SystemControlPage.Designer.cs">
+      <DependentUpon>SystemControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneDigitalGaugeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneDigitalGaugeUserControl.Designer.cs">
+      <DependentUpon>OneDigitalGaugeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OnelinearGauge1Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OnelinearGauge1Control.Designer.cs">
+      <DependentUpon>OnelinearGauge1Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneStateUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneStateUserControl.Designer.cs">
+      <DependentUpon>OneStateUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneTemperature.Designer.cs">
+      <DependentUpon>OneTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneTemperature_SetUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\OneTemperature_SetUp.Designer.cs">
+      <DependentUpon>OneTemperature_SetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\UPS_ThreePhase\OneCircularGaugeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceUI\Solar_PV\UPS_ThreePhase\OneCircularGaugeUserControl.designer.cs">
+      <DependentUpon>OneCircularGaugeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Sform\AdvancedOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Sform\AdvancedOptionForm.Designer.cs">
+      <DependentUpon>AdvancedOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Sform\SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Sform\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Smachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Smachine.designer.cs">
+      <DependentUpon>Smachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicFunction\ExportClass.cs" />
+    <Compile Include="PublicFunction\PrintClass.cs" />
+    <Compile Include="TabPage\MainContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\MainContent.Designer.cs">
+      <DependentUpon>MainContent.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\devRt.resx">
+      <DependentUpon>devRt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Sform\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Sform\AutoSearchAddr.resx">
+      <DependentUpon>AutoSearchAddr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Smachine.resx">
+      <DependentUpon>Smachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\AddTask.resx">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\RealTimeLine.resx">
+      <DependentUpon>RealTimeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\HistoricLine.resx">
+      <DependentUpon>HistoricLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\HistoricTable.resx">
+      <DependentUpon>HistoricTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\AlertEvent.resx">
+      <DependentUpon>AlertEvent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\FormScheduleTask.resx">
+      <DependentUpon>FormScheduleTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\TableDisplay.resx">
+      <DependentUpon>TableDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar.resx">
+      <DependentUpon>EASolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolarStatePage.resx">
+      <DependentUpon>EASolarStatePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\EASolar_RateInfo.resx">
+      <DependentUpon>EASolar_RateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\SolarStartControlPage.resx">
+      <DependentUpon>SolarStartControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\EASolar_GF8000\SystemControlPage.resx">
+      <DependentUpon>SystemControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\OneDigitalGaugeUserControl.resx">
+      <DependentUpon>OneDigitalGaugeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\OnelinearGauge1Control.resx">
+      <DependentUpon>OnelinearGauge1Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\OneStateUserControl.resx">
+      <DependentUpon>OneStateUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\OneTemperature.resx">
+      <DependentUpon>OneTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\OneTemperature_SetUp.resx">
+      <DependentUpon>OneTemperature_SetUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI\Solar_PV\UPS_ThreePhase\OneCircularGaugeUserControl.resx">
+      <DependentUpon>OneCircularGaugeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Sform\AdvancedOptionForm.resx">
+      <DependentUpon>AdvancedOptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Sform\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\MainContent.resx">
+      <DependentUpon>MainContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACCESSDBDAL\ACCESSDBDAL.csproj">
+      <Project>{42925ADB-436B-4BFA-B79E-8B52E0095B2D}</Project>
+      <Name>ACCESSDBDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Communication\Communication.csproj">
+      <Project>{92AD8CDA-B764-4BDE-843F-4A13F65407D6}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MathConvertHelper\MathConvertHelper.csproj">
+      <Project>{D9335A15-174D-4064-84C7-C2D079350CDB}</Project>
+      <Name>MathConvertHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model_Data\Model_Data.csproj">
+      <Project>{0C65B785-7934-470A-832D-7C68DFB0DD3D}</Project>
+      <Name>Model_Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="offgrid.ico" />
+    <None Include="Resources\IDBK %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

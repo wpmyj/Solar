@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>  
+  <PublicInfo>
+    <DateTime>DateTime</DateTime>
+    <Port>Port</Port>
+    <DevID>Device ID</DevID>
+    <PortID>Port ID</PortID>
+    <SignalId>Signal ID</SignalId>
+    <DevName>Device Name</DevName>
+    <PortName>Port Name</PortName>
+    <SignalName>Signal Name</SignalName>
+    <SignDesc>Signal Desc.</SignDesc>
+    <SignalUnit>Signal Unit</SignalUnit>
+    <SignalType>Signal Type</SignalType>
+    <DevTypeID>Device Type ID</DevTypeID>
+
+    <OK>OK</OK>
+    <View>View</View>
+    <Start>Start</Start>
+    <Pause>Pause</Pause>
+    <Cancel>Cancel</Cancel>
+    <Modify>Modify</Modify>
+    <Return>Return</Return>
+    <Delete>Delete</Delete>
+    <Recover>Resume</Recover>
+    <Spntime>Refresh Time</Spntime>
+    <ISModify>Modifiable</ISModify>
+    <UpdateSign>Update Signal</UpdateSign>
+
+
+    <CommuState>Communication Status:</CommuState>
+    <SeleSign>Select Signal:</SeleSign>
+    <EndTime>Ending Time:</EndTime>
+    <StartTime>Start Time:</StartTime>
+    <ViewCurve>View Curve</ViewCurve>
+    <ClickLoad>Click To Reload</ClickLoad>
+    <InsertDB>Insert DataBase</InsertDB>
+    <SaveAndNext>Save and Next</SaveAndNext>
+    <SaveAndExit>Save and Quit</SaveAndExit>
+    <NullWrite>Not Filled</NullWrite>
+    <Ana>Analogue</Ana>
+    <Dig>Digital</Dig>
+    <Year>Year</Year>
+    <Month>Month</Month>
+    <Day>Day</Day>
+    <Hour>Hour</Hour>
+    <Minute>Minute</Minute>
+    <Second>Second</Second>
+
+    <SelPort>Please Choose Port</SelPort>
+    <SelDev>Please Choose Device</SelDev>
+    <SelSign>Please Choose Signal</SelSign>
+
+    <NoRefresh>Don't refresh.</NoRefresh>
+
+    <!--ListForm-->
+    <DevReal-timeData_ListForm>Device real-time data</DevReal-timeData_ListForm>
+    <ID_ListForm>ID</ID_ListForm>
+    <SignalName_ListForm>Signal name</SignalName_ListForm>
+    <SignalValue_ListForm>Signal value</SignalValue_ListForm>
+    <Unit_ListForm>Unit</Unit_ListForm>
+    <SignalTime_ListForm>Signal time</SignalTime_ListForm>
+
+    <!--历史数据界面加入打印导出按钮-->
+    <Print>Print</Print>
+    <Export>Export</Export>
+    <NoDataFound>No Data！</NoDataFound>
+    <Info>Info</Info>
+</PublicInfo>
+  <AlarmClass>
+    <Tip>Clue</Tip>
+    <Time>Time</Time>
+    <Date>Date</Date>
+    <Year>Year</Year>
+    <Month>Month</Month>
+    <Error>Error</Error>
+    <Warn>Warning</Warn>
+    <AlarmSource>Alarm Source</AlarmSource>
+    <AlarmStr>Alarm Information</AlarmStr>
+    <AlarmTime>Alarm Time</AlarmTime>
+    <!--告警信息内容-->
+    <Port>Port</Port>
+    <PortOpenedSuccess>opened successfully</PortOpenedSuccess>
+    <PortOpenedFail>opened fail</PortOpenedFail>
+    <CommResume>Communication Resume</CommResume>
+    <CommOK>Communication Success</CommOK>
+    <CommFail>Communication Fail</CommFail>
+  </AlarmClass>
+  <AlarmSet>
+    <Text>Alarm Info.Settings</Text>
+    <Host>Mail Server</Host>
+    <Subject>Subject</Subject>
+    <SubText>Auto_Warning Mail</SubText>
+    <Number>Receiver Port Number</Number>
+    <Password>Passeord</Password>
+    <EmailSet>Mail Warning</EmailSet>
+    <SMSSet>SMS Warning</SMSSet>
+    <PhoneSet>Phone Warning</PhoneSet>
+    <CCAddr>CC Mail Address</CCAddr>
+    <BCCAddr>BCC Mail Address</BCCAddr>
+    <ToAddr>Receiver Mail Address</ToAddr>
+    <ToMsg>Receiver Info.</ToMsg>
+    <FromAddr>Sender Mail Address</FromAddr>
+    <FromName>Sender Name</FromName>
+    <TimeOut>Overtime Settings</TimeOut>
+    <EmailAlarmSet>Mail Notice Settings</EmailAlarmSet>
+    <SMSAlarmSet>SMS Warning Settings</SMSAlarmSet>
+    <PhoneAlarmSet>Phone Warning Settings</PhoneAlarmSet>
+    <StartEmail>Start Mail Warning</StartEmail>
+    <StartSMS>Start SMS Warning</StartSMS>
+    <StartPhone>Start Phone Warning</StartPhone>
+    <StartDev>Enable this Settings in Device</StartDev>
+    <StartSig>Enable this Settings in Signal</StartSig>
+    <SMSSaveSucc>SMS Settings Success!</SMSSaveSucc>
+    <PhoneSaveSucc>Phone Settings Success!</PhoneSaveSucc>
+    <EmailSaveSucc>Mail Settings Success!</EmailSaveSucc>
+    <IllegalAdde>{0}is Invalid Mail Address!</IllegalAdde>
+    <CorrectTimeout>Please input correct over time!</CorrectTimeout>
+  </AlarmSet>
+  <EASolar_GF8000>
+    <SystemData>System Data</SystemData>
+    <UnConnect>UnConnect</UnConnect>
+    <Connected>Connected</Connected>
+    <Disconnected>Disconnected</Disconnected>
+    <TotalGeneratedEnergy>Total Generated Energy</TotalGeneratedEnergy>
+    <DailyGeneratedEnergy>Daily Generated Energy</DailyGeneratedEnergy>
+    <BatteryVoltage>Battery Voltage</BatteryVoltage>
+    <PVPower>PV Power</PVPower>
+    <Temperature>Temperature</Temperature>
+    <VersionNumber>Version Number:</VersionNumber>
+    <SetSuccess>Setting Success!</SetSuccess>
+    <SetFailure>Setting Failure!</SetFailure>
+    <Prompt>Prompt</Prompt>
+    <AreYouSureConfig>Are you sure you want to set the currently selected command?</AreYouSureConfig>
+    <!--TabText-->
+    <ACInfo_Tab>AC info</ACInfo_Tab>
+    <Real-timeInfo>Real-time info</Real-timeInfo>
+    <RatedInfo_Tab>Rated info</RatedInfo_Tab>
+    <FaultInfo>Fault info</FaultInfo>
+    <DevControl_Tab>Device control</DevControl_Tab>
+    <SystemSettings>System settings</SystemSettings>
+    <!--ACInfoUC-->
+    <ACInfo>AC info</ACInfo>
+    <ACInputVoltage>AC input voltage</ACInputVoltage>
+    <ACOutputVoltage>AC output voltage</ACOutputVoltage>
+    <ACOutputFrequency>AC output frequency</ACOutputFrequency>
+    <ACInputEnergy>AC Input Energy</ACInputEnergy>
+    <ACOutputEnergy>AC Output Energy</ACOutputEnergy>
+    <!--Real-time Info-->
+    <PVInfo>PV info</PVInfo>
+    <PVInputVoltage>PV input voltage</PVInputVoltage>
+    <PVChargingCurrent>PV charging current</PVChargingCurrent>
+    <Percentage>Level Info</Percentage>
+    <LoadPercentage>Load Level</LoadPercentage>
+    <BatteryCapacityLevel>Battery Capacity Level</BatteryCapacityLevel>
+    <!--RatedInfo-->
+    <RatedInfo>Rated info</RatedInfo>
+    <RatedVol>Rated voltage:</RatedVol>
+    <RatedBatteryVol>Rated battery voltage:</RatedBatteryVol>
+    <ProductInfo>Product Info</ProductInfo>
+    <ProductType>Product Type</ProductType>
+    <ProductModel>Product Model</ProductModel>
+    <ChargingCurrentLevel>Charging current level:</ChargingCurrentLevel>
+    <CommuVersion>Monitoring Board Version:</CommuVersion>
+    <ControlVersion>Control Board Version:</ControlVersion>
+    
+    <!--FaultInfo-->
+    <ACStatus>AC Status</ACStatus>
+    <ACNormal>AC Normal</ACNormal>
+    <ACFault>AC Fault</ACFault>
+    <PVLowVoltage>PV Low Voltage</PVLowVoltage>
+    <PVOverVoltage>PV Over Voltage</PVOverVoltage>
+    <PVReversed>PV Reversed</PVReversed>
+    <BatteryLowVoltage>Battery Low Voltage</BatteryLowVoltage>
+    <BatteryOverDisCharge>Battery Over DisCharge</BatteryOverDisCharge>
+    <BatteryFault>Battery Fault</BatteryFault>
+    <OverLoad>Over Load</OverLoad>
+    <ACChargingStatus>AC Charging Status</ACChargingStatus>
+    <ACChargingOff>AC Charging Off</ACChargingOff>
+    <ACChargingOn>AC Charging On</ACChargingOn>
+    <PVChargingStatus>PV Charging Status</PVChargingStatus>
+    <PVChargingOff>PV Charging Off</PVChargingOff>
+    <PVChargingOn>PV Charging On</PVChargingOn>
+    <ThermalProtection>Thermal Protection</ThermalProtection>
+    <MPPT_IGBTProtect>MPPT And IGBT Protect</MPPT_IGBTProtect>
+    <BUSFault>BUS Fault</BUSFault>
+    <ON_OFFStatus>ON_OFF Status</ON_OFFStatus>
+    <OFFStatus>OFF Status</OFFStatus>
+    <ONStatus>ON Status</ONStatus>
+    <ShutDownActive>Shut Down Active</ShutDownActive>
+    <PowerOnActive>Power On Active</PowerOnActive>
+    <BatteryOverChargeProtect>Battery Over Charge Protect</BatteryOverChargeProtect>
+    <ActivateCountDownPVCharging>Activate Count Down PV Charging</ActivateCountDownPVCharging>
+    <ACFrequencyMode>AC Frequency Mode</ACFrequencyMode>
+    <ACFrequencySelf-oscillationMode>AC Frequency Self-oscillation Mode</ACFrequencySelf-oscillationMode>
+    <ACFrequencyPhase-lockedMode>AC Frequency Phase-locked Mode</ACFrequencyPhase-lockedMode>
+    <RectiferWorkMode>Rectifer Work Mode</RectiferWorkMode>
+    <PVAndBatteryMode>PV And Battery Mode</PVAndBatteryMode>
+    <PriorityMode>Priority Mode</PriorityMode>
+    <PVPriorityMode>PV Priority Mode</PVPriorityMode>
+    <ACPriorityMode>AC Priority Mode</ACPriorityMode>
+    <SPIFault>SPI Fault</SPIFault>
+    <BatteryTestMode>Battery Test Mode</BatteryTestMode>
+    <!--DevControl-->
+    <DevControlInfo>Device control info</DevControlInfo>
+    <BatteryTest1Min>Battery test for 1 minute</BatteryTest1Min>
+    <BatteryLowVolTest>Battery low voltage test</BatteryLowVolTest>
+    <BatteryTestCancel>Cancel Test</BatteryTestCancel>
+    <ShutDownCanceling>Cancel Shut Down</ShutDownCanceling>
+    <SwitchOn>Power On</SwitchOn>
+    <ShutDown>ShutDown N(0-99) minutes later</ShutDown>
+    <Sleep>Sleep N minutes</Sleep>
+    <OK_DevControl>OK</OK_DevControl>
+    <Cancel_DevControl>Cancel</Cancel_DevControl>
+    <!--SystemSetting-->
+    <SystemInfoSetting>System info setting</SystemInfoSetting>
+    <DevCommAddr>Device Addr(1-247)</DevCommAddr>
+    <DevCommBaud>Baud Rate</DevCommBaud>
+    <ModbusProtocolMode>Modbus protocol mode</ModbusProtocolMode>
+    <ParityBitCheck>Parity Bit</ParityBitCheck>
+    <StopBitCheck>Stop Bit</StopBitCheck>
+    <DateSettings>Date settings</DateSettings>
+    <DevCurrentTime>Device current time</DevCurrentTime>
+    <DaySetting_Radio>Day setting</DaySetting_Radio>
+    <DaySetting>Day setting</DaySetting>
+    <ClearRecords>Clear records</ClearRecords>
+    <OK_SystemSetting>OK</OK_SystemSetting>
+    <Cancel_SystemSetting>Cancel</Cancel_SystemSetting>
+    <SelectTheRightItem>Please choose the right item!</SelectTheRightItem>
+</EASolar_GF8000>      
+  <SmachineForm>
+    <StartCommunicating>Start</StartCommunicating>
+    <StopCommunicating>Stop</StopCommunicating>
+    <ParaSetting>Options</ParaSetting>
+    <ReadHisEvent>Read HisEvent</ReadHisEvent>
+    <AddrSearching>Searching</AddrSearching>
+    <OpenInfoWnd>Open Info Wnd</OpenInfoWnd>
+    <CloseInfoWnd>Close Info Wnd</CloseInfoWnd>
+    <Exit>Exit</Exit>
+    <SystemRelated>About</SystemRelated>
+    <OperateDocument>Help</OperateDocument>
+    <Now>Now:</Now>
+    <Port>Current Port:</Port>
+    <Interval>Refresh Interval:</Interval>
+    <Event>Latest Event:</Event>
+  </SmachineForm>  
+  <SerialInfo>
+    <Serial>Serial</Serial>
+    <SerialNum>Com Num</SerialNum>
+    <BaudRate>BaudRate</BaudRate>
+    <DataBits>DataBits</DataBits>
+    <StopBits>StopBits</StopBits>
+    <IPAddr>IP Address</IPAddr>
+    <Parity>Parity Bit</Parity>
+    <BasicInfo>Basic Info.Settings</BasicInfo>
+    <SerialInfo>Com Info.Settings</SerialInfo>
+    <ReTime>Receive Waiting Time</ReTime>
+    <TCPIPInfo>TCP/IP Info.Settings</TCPIPInfo>
+    <!--ButtonText-->
+    <OK>OK</OK>
+    <Cancel>Cancel</Cancel>
+    <AdvancedOption>Advanced Option</AdvancedOption>
+    <!--按下确定后的提示信息-->
+    <PortNotSupport>Never support the port！</PortNotSupport>
+    <NoEmptyStr>Null charater is not allowed！</NoEmptyStr>
+    <FailSelection>Fail selection！</FailSelection>
+    <WaitAndScanningTimeInfo1>Scanning Interval:</WaitAndScanningTimeInfo1>
+    <WaitAndScanningTimeInfo2>Receive waiting time:</WaitAndScanningTimeInfo2>
+    <WaitAndScanningTimeInfo3>Make sure the Receive Waiting Time is less than the Scanning Interval！</WaitAndScanningTimeInfo3>
+    <Warning>Warning</Warning>
+    <!--高级选项-->
+    <Port>Port</Port>
+    <PortName>Port Name:</PortName>
+    <Description>Description:</Description>
+    <ScanningInterval>Scanning Interval(ms):</ScanningInterval>
+    <OverTime>Over Time(ms):</OverTime>
+    <ReconnectionTimes>Reconnection Times:</ReconnectionTimes>
+    <ResumeTime>Resume Time(ms):</ResumeTime>
+    <ReadOverTime>Read Over Time(ms):</ReadOverTime>
+    <WriteOverTime>Write Over Time(ms);</WriteOverTime>
+    <Device>Device</Device>
+    <DevName>Device Name:</DevName>
+    <DevAddr>Device Address(Unit Num):</DevAddr>
+    <WriteDataInterval>Write Data Interval(ms):</WriteDataInterval>
+    <Ok_Ad>Ok</Ok_Ad>
+    <Cancel_Ad>Cancel</Cancel_Ad>
+    <NoNullInput>Please make sure there is no Null Input!</NoNullInput>
+  </SerialInfo>
+  <ChildForm>
+    <!--参数设置-->
+    <ParaSetting>Para Setting</ParaSetting>
+    <ConnectSetting>Connect Setting</ConnectSetting>
+    <PortSelect>Port Select</PortSelect>
+    <CommProtocol>Communication Protocol</CommProtocol>
+    <DevSelection>Device Select</DevSelection>
+    <TCPIPSetting>TCP/IP Setting</TCPIPSetting>
+    <IPAddr>IP Address</IPAddr>
+    <PortNum>Port Num</PortNum>
+    <!--获取地址-->
+    <Addr>Addr：</Addr>
+    <Termination>Stop</Termination>
+    <SearchText> Automatic Search Device Address</SearchText>
+    <AppAddr>Application address</AppAddr>
+    <SearchDev>Search equipment</SearchDev>
+    <InPrepare>Preparing...</InPrepare>
+    <ConnSucc>Connection successful!</ConnSucc>
+    <ConnFail>Connection failure!</ConnFail>
+    <PortOpenFail>Port open failure!</PortOpenFail>
+    <TestComplete>Test completed!</TestComplete>
+    <StartNewAddr>New address enable!</StartNewAddr>
+    <RenewDB>Database updating!</RenewDB>
+    <SearchEnd>Search be forced to end!</SearchEnd>
+    <SearchEndFirst>Unable to close temporarily, please termination search first!</SearchEndFirst>
+    <!--读取下位机历史事件-->
+    <Read>Read</Read>
+    <Info>Info.</Info>
+    <Time>Time</Time>
+    <Signal>Signal</Signal>
+    <Status>Status</Status>
+    <ReadHisyText>Get The Historical Events Of Lower Machine</ReadHisyText>
+    <HisyCount>Count:</HisyCount>
+    <ClearAfterRead>Clear after read</ClearAfterRead>
+    <PanelText>Historical Events Storaged In Lower Machine</PanelText>
+    <NoLoadEquip>Never Loaded Equipment!</NoLoadEquip>
+    <ReadHisy>Reading the history data</ReadHisy>
+    <NoHisyRead>No historical data!</NoHisyRead>
+    <ClearHisySucc>The lower machine's historical records has been removed successfully!</ClearHisySucc>
+    <Analog>
+      <!--<For AnalogSignal>-->
+      <Text>Analog Signal Modified Interface</Text>
+      <ShowSignalInfo>Signal Info.Display</ShowSignalInfo>
+      <SignalInfo>Serial Info.</SignalInfo>
+      <OriginalValue>Initial Value</OriginalValue>
+      <ModifyValue>Modified Value</ModifyValue>
+      <Did>Did</Did>
+      <Desc>Description</Desc>
+      <HighestRange>Highest Range</HighestRange>
+      <HigherRange>Higer Range</HigherRange>
+      <LowestRange>Lowest Range</LowestRange>
+      <LowerRange>Lower Range</LowerRange>
+      <SafeArea>Safe Area</SafeArea>
+      <SafeLevel>Safety Class</SafeLevel>
+      <FactorA>Ration Factor A</FactorA>
+      <FactorB>Ration Factor B</FactorB>
+      <SignalUnit>Engineering Unit</SignalUnit>
+      <DataLen>Data Length</DataLen>
+      <DataStart>Data Start Address</DataStart>
+      <RegisterType>Register Type</RegisterType>
+      <ISContinuous>Continous or Not</ISContinuous>
+      <DataAnaly>Datalearning Mode</DataAnaly>
+      <IsRecord>Record or Not</IsRecord>
+      <AlarmConditions>Alarm Condition</AlarmConditions>
+      <Valch>Character String Filling Mode</Valch>
+      <SignalIni>Signal Initial Value</SignalIni>
+      <AnaSignReadFreq>Alalog Signal Read Frequency</AnaSignReadFreq>
+    </Analog>
+    <Digital>
+      <Text>Digital Signal Modification Interface</Text>
+      <ShowSignalInfo>Set Digital Signal</ShowSignalInfo>
+      <Desc>Description</Desc>
+      <ZeroDesc>Value 0 Describe</ZeroDesc>
+      <ZeroValue>Value 0 Meaning</ZeroValue>
+      <OneDesc>Value 1 Describe</OneDesc>
+      <OneValue>Value 1 Meaning</OneValue>
+      <OriginalValue>Initial Value</OriginalValue>
+      <DataStart>Data Start Address</DataStart>
+      <RegisterType>Register Type</RegisterType>
+      <ISContinuous>Continous or Not</ISContinuous>
+      <IsRecord>Record or Not</IsRecord>
+      <IsReport>Report or Not</IsReport>
+
+      <SignDesc>Signal Description</SignDesc>
+      <SignAlarmCont>Signal Alarm Condition</SignAlarmCont>
+      <SignReadFreq>Signal Read Frequency</SignReadFreq>
+    </Digital>
+  </ChildForm>
+  <ChildUser_TabPage>
+    <Tab2Text>Device Real Time Info.</Tab2Text>
+    <Tab3Text>Device Real Time Curve</Tab3Text>
+    <Tab4Text>Device Historical Curve</Tab4Text>
+    <Tab5Text>Device Historical Data</Tab5Text>
+    <RealList>Real Time List Display</RealList>
+    <HisyList>Historical Data Log</HisyList>
+    <HisyEvent>Historical Event Log</HisyEvent>
+    <XTimeLimit>X Axis Time Range(s)</XTimeLimit>
+  </ChildUser_TabPage>    
+  <UserControl>
+    <PortWnd>Port Info.</PortWnd>
+    <AddDevWnd>添加设备界面</AddDevWnd>
+    <SetDevWnd>设备信息设置</SetDevWnd>
+    <DevBasicMsg>填写设备基本信息</DevBasicMsg>
+    <AnaList>模拟信号列表</AnaList>
+    <DigList>数字信号列表</DigList>
+    <!--BasicMsg-->
+    <Desc>描述</Desc>
+    <Type>类型</Type>
+    <Unit>单元号</Unit>
+    <State>启用状态</State>
+    <ReTime>重连次数</ReTime>
+    <DevType>设备类型</DevType>
+    <TimeOut>超时时间</TimeOut>
+    <ScantTime>扫描时间</ScantTime>
+    <RecoveyTime>恢复时间</RecoveyTime>
+    <WriteTime>写入数据时间</WriteTime>
+    <ReadTimeOut>读超时时间</ReadTimeOut>
+    <WriteTimeOut>写超时时间</WriteTimeOut>
+    <RefreshTimer>定时器刷新时间</RefreshTimer>
+    <!--CardText-->
+    <DevID>设备编号:</DevID>
+    <DevName>设备名称:</DevName>
+    <CommState>通讯状态:</CommState>
+    <!--Button-->
+    <InsertDev>插入设备</InsertDev>
+    <InsertPort>插入端口</InsertPort>
+    <UpdatePort>更新端口</UpdatePort>
+    <SaveMod>保存修改</SaveMod>
+    <AnaEdit>模拟信号编辑</AnaEdit>
+    <DigEdit>数字信号编辑</DigEdit>
+    <EditSucc>编辑完成</EditSucc>
+    <!--TabText-->
+    <RealList>实时列表</RealList>
+    <RealData>Real-time data</RealData>
+    <RealView>Real-time curve</RealView>
+    <HisyView>History curves</HisyView>
+    <HisyData>History data</HisyData>
+    <HisEvent>History events</HisEvent>
+    <!--Other-->
+    <SysDefault>系统默认</SysDefault>
+    <DescText>请输入描述</DescText>
+    <!--Other1 by zq-->
+    <PortName>Port name</PortName>
+    <DeviceName>Device name</DeviceName>
+    <CommunicateState>Communicate state</CommunicateState>
+    <RefreshInvert>Refresh Invert</RefreshInvert>
+    <Suspend>Suspend</Suspend>
+    <Resume>Resume</Resume>
+    <FormView>Form View</FormView>
+    <CustomUIView>CustomUI View</CustomUIView>
+</UserControl>
+  <Desc>
+    <!--MainFrm-->
+    <Msg>Info</Msg>
+    <Fault_MainForm>Fault</Fault_MainForm>
+    <NotOpen>Can not open, possible reason is:</NotOpen>
+    <HelpFile>The Help File </HelpFile>
+    <NotSupportPDF>1、System can not support PDF document</NotSupportPDF>
+    <NotExistFile>2、Document is transferred or damaged</NotExistFile>
+    <CurrentVersion>Version:</CurrentVersion>
+    <BelongsToEAST>IDBK has all right to interpret！</BelongsToEAST>
+    <!--MainFrm-->
+
+    <!--ChildUser_TabPage-->
+    <ObtainFilure>Failed to get data! Reason:</ObtainFilure>
+    <TimeNotNull>Not allow to input a null Time value!</TimeNotNull>
+    <TimeNotData>No data was found in the period of time!</TimeNotData>
+    <TimeLimit>The begin time must be earlier than the end time!</TimeLimit>
+    <SelStartTime>Please choose the begin time and make sure the begin time is earlier than the end time.</SelStartTime>
+    <Warning>Warning</Warning>
+    <Prompting>Prompting</Prompting>
+    <Fault>Fault</Fault>
+    <Suspend>Suspend</Suspend>
+    <Resume>Resume</Resume>
+    <EventTime>Event Time</EventTime>
+    <EventSource>Event Source</EventSource>
+    <EventInfo>Event Info</EventInfo>
+    <!--ChildUser_TabPage-->
+  </Desc>
+    <ScheduleStr>
+   		<scheduleManager>Schedule</scheduleManager>
+   		<addScheduleTask>Add Task</addScheduleTask>
+   		<deleteScheduleTask>Delete Task</deleteScheduleTask>
+   		<OK>OK</OK>
+   		<task>Task</task>
+   		<taskDate>Task Date</taskDate>
+   		<frequency>Frequency</frequency>
+   		<once>Once</once>
+   		<everyDay>Every Day</everyDay>
+   		<BatteryTest>Battery Test</BatteryTest>
+   		<OpenTheInverter>Open the Inverter</OpenTheInverter>
+   		<CloseTheInverter>Close the Inverter</CloseTheInverter>
+   		<cancel>Cancel</cancel>
+   		<Event>Task</Event>
+   		<ExecutionTime>Execution Time</ExecutionTime>
+   		<State>State</State>
+   	  <Lastexecution>Last execution Time</Lastexecution>
+   	  <Weekly>Weekly</Weekly>
+   	  <Result>Result</Result>
+   	  <AwaitingExecution>Awaiting Execution</AwaitingExecution>
+   	  <Failure>Failure</Failure>
+   	  <Success>Success</Success>
+   	  <MaxTask>You can only add up to seven tasks</MaxTask>
+   	</ScheduleStr>
+</root>

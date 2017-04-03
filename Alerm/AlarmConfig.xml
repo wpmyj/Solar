@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AlarmConfig>
+
+  <!--模式配置-->
+  <AlarmMode>
+    <SMSMode>1</SMSMode>
+    <PhoneMode>2</PhoneMode>
+    <EmailMode>3</EmailMode>
+  </AlarmMode>
+
+  <!--电话告警配置信息-->
+  <PhoneAlarmConfig>
+    <BaudRate>9600</BaudRate>
+    <DataBit>8</DataBit>
+    <StopBit>1</StopBit>
+    <Parity>4</Parity>
+    <PortName>COM1</PortName>
+  </PhoneAlarmConfig>
+
+  <!--短信告警配置信息-->
+  <SMSAlarmConfig>
+    <BaudRate>9600</BaudRate>
+    <DataBit>8</DataBit>
+    <StopBit>1</StopBit>
+    <Parity>4</Parity>
+    <PortName>COM1</PortName>
+  </SMSAlarmConfig>
+
+  <!--邮件告警配置信息-->
+  <EmailAlarmConfig>
+    <SendFromAdr>zzz@163.com</SendFromAdr>
+    <SenderName>EASmart</SenderName>
+    <PassWord>1234</PassWord>
+    <Host>192.168.0.9</Host>
+    <Subject>自动告警邮件</Subject>
+    <TimeOut>200</TimeOut>
+  </EmailAlarmConfig>
+
+</AlarmConfig>
